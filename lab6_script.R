@@ -258,7 +258,7 @@ arsenic_chicken_data = question_13()
 
 
 question_14 <- function() {
-  # 13. Shift the dataset to obtain a mean equal to the mean in the null hypothesis (verify that the mean is 80).
+  # 14. Shift the dataset to obtain a mean equal to the mean in the null hypothesis (verify that the mean is 80).
   # Then generate a bootstrap distribution with 2000 averages assuming the null hypothesis is true. Show the
   # distribution of bootstrap stats in a histogram.
   
@@ -275,7 +275,7 @@ question_14 <- function() {
   mean_null_arsenic_chicken <- mean(null_arsenic_chicken)
   
   #verify if the means are the same
-  msg <- paste("QUESTION 13:", "The average amount of arsenic in chicken is 80 ppb and the shifted dataset average is", mean_null_arsenic_chicken)
+  msg <- paste("QUESTION 14:", "The average amount of arsenic in chicken is 80 ppb and the shifted dataset average is", mean_null_arsenic_chicken)
   print(msg)
   
   # generate the bootstrap distribution
@@ -292,7 +292,7 @@ question_14 <- function() {
   hist_null_arsenic_chicken <- hist(boot_stats_arsenic_chicken)
   hist_null_arsenic_chicken
   
-  print("QUESTION 13: display histogram")
+  print("QUESTION 14: display histogram")
   
   return (boot_stats_arsenic_chicken)
 }
